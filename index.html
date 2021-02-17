@@ -92,7 +92,7 @@
           .then(
             function(response) {
             if (response.status !== 200) {
-              output.innerHTML = "Error: " + response.status + " " + response.statusText;
+              output.innerHTML = response.status + " " + response.statusText;
               return;
             }
             response.json().then(function(data) {
@@ -118,7 +118,7 @@
           .then(
             function(response) {
             if (response.status !== 200) {
-              output.innerHTML = "Error: " + response.status + " " + response.statusText;
+              output.innerHTML = response.status + " " + response.statusText;
               return;
             }
             response.json().then(function(data) {
@@ -163,6 +163,9 @@
             .catch(function(error) {
               output.innerHTML = error;
             })
+          
+          document.getElementById("author").value = "";
+          document.getElementById("title").value = "";
         }
       }
 
@@ -200,6 +203,10 @@
             .catch(function(error) {
               output.innerHTML = error;
             })
+          
+          document.getElementById("author").value = "";
+          document.getElementById("title").value = "";
+          id.value = "";
         }
       }
 
