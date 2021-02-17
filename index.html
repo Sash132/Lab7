@@ -91,7 +91,7 @@
         fetch(document.getElementById("endpoint").value)
           .then(
             function(response) {
-            if (response.status !== 20) {
+            if (response.status !== 200) {
               output.innerHTML = response.status + " " + response.statusText;
               return;
             }
