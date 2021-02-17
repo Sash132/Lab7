@@ -137,7 +137,6 @@
       function createRecord(setting) {
         document.getElementById("recordIDcontainer").style.display = "none";
         let output = document.getElementById("output");
-
         let input = { "author" : document.getElementById("author").value, "title" : document.getElementById("title").value };
 
         if(setting == "show") {
@@ -173,7 +172,6 @@
       function updateRecord(setting) {
         let output = document.getElementById("output");
         let id = document.getElementById("recordID");
-
         let input = { "author" : document.getElementById("author").value, "title" : document.getElementById("title").value };
 
         if(setting == "show") {
